@@ -25,7 +25,7 @@ public class Car
 
     public Car()
     {
-        
+        CarLot.NumberOfCars++;
     }
 
     public Car(string make, string model, int year, bool isDriveable)
@@ -34,5 +34,7 @@ public class Car
         Model = model;
         Year = year;
         IsDriveable = isDriveable;
+        
+        CarLot.NumberOfCars++;
     }
 }
